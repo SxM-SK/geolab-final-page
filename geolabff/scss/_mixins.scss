@@ -1,0 +1,32 @@
+@mixin width {
+    max-width: 1170px;
+    width:100%;
+    margin: 0 auto;
+}
+@mixin flex-proops ($justify,$align) {
+    display:flex;
+    justify-content:$justify;
+    align-items:$align;   
+}
+
+@mixin location ($justify,$align){
+    display:flex;
+    flex-direction: column;
+    justify-content:$justify;
+    align-items:$align;
+}
+
+@mixin section2div {
+    width: 300px;
+    height: 180px;
+}
+@mixin section4 {
+    max-width: 390px;
+    width: 100%;
+    height: 220px;
+}
+@mixin section6 {
+    max-width: 200px;
+    width: 100%;
+    height: 200px;   
+}

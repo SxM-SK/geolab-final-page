@@ -1,0 +1,624 @@
+                //    ============header start========
+body{
+    @include width;
+}
+header{
+   position: fixed;
+   z-index: 9999;
+   @include flex-proops (space-around,center,);
+   @include width;  
+   background-color: $section1colors;
+   .logo{
+       margin-left: 20px;
+   } 
+ }
+ nav{
+     background-color:aqua;
+     padding: 4px;
+     }
+ul{
+    display: flex;
+    li{
+         margin-right:1px; 
+         padding: 2px;  
+         border: solid 2px black;
+        :hover{
+             color:$hovercolor;
+             transition: 1s;
+             font-size: 30px;
+             margin-right:40px;
+         }  
+         a{
+             color:$color1;
+             font-size: 24px;
+         }  
+    }
+}
+.list{
+    display: none;
+}
+                    //    ============header end========
+                   //    ============section1 start========
+
+.section1{
+    @include width;
+    height: 650px;
+    background-image: url("../imiges/girl.png");
+    background-position: top right;
+
+    @include location (center,center);
+    h3{
+    font-size:$section1h3;
+    font-family:$roboto;
+    color:$section1colors;
+    }
+    h2{
+    font-size:$section1h2;
+    color:$section1colors;
+    }
+}
+.button{
+    margin-top: 130px;
+    width: 200px;
+    height: 70px;
+    background-color:$button;
+    @include location (center,center);
+    border-radius: 25%;
+    font-size:$button-t;
+    :hover{
+        color:$hovercolor;
+        transition:2s;
+    }
+}
+                   //    ============section1 end========
+                  //    ============section2 start========
+.section2{
+    @include flex-proops (space-between,center);
+    flex-wrap: wrap;
+}
+.section2div1{
+    background-image: url(../imiges/tr1.png);
+    @include section2div;
+    @include location (center,center);
+    color:$section2div1;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    font-family:$roboto; 
+    border:$button 2px solid;
+   
+      h3{
+    font-size:$section2h3;
+    }
+    h4{
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+    p{
+        margin-top: 20px;
+        width: 80px;
+        height: 30px;
+        background-color:$button;
+        @include location (center,center);
+        border-radius: 10%;
+        font-size:$section2button;
+        color:$color1;
+        :hover{
+            color:$hovercolor;
+            transition:2s;
+        }
+    }
+}      
+.section2div2{
+    background-image: url(../imiges/tr2.png);
+    @include section2div;
+    @include location (center,center);
+    color:$section2div2;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    font-family:$roboto; 
+    border:$button 2px solid;
+   
+      h3{
+    font-size:$section2h3;
+    }
+    h4{
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+    p{
+        margin-top: 20px;
+        width: 80px;
+        height: 30px;
+        background-color:$button;
+        @include location (center,center);
+        border-radius: 10%;
+        font-size:$section2button;
+        color:$color1;
+        :hover{
+            color:$hovercolor;
+            transition:2s;
+        }
+    }
+}   
+.section2div3{
+    background-image: url(../imiges/tr3.png);
+    @include section2div;
+    @include location (center,center);
+    color:$section2div3;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    font-family:$roboto; 
+    border:$button 2px solid;
+   
+      h3{
+    font-size:$section2h3;
+    }
+    h4{
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+    p{
+        margin-top: 20px;
+        width: 80px;
+        height: 30px;
+        background-color:$button;
+        @include location (center,center);
+        border-radius: 10%;
+        font-size:$section2button;
+        color:$color1;
+        :hover{
+            color:$hovercolor;
+            transition:2s;
+        }
+    }
+}      
+                  //    ============section2 end========
+                  //    ============section3 start========
+.section3{
+    display: flex;
+    @include width;
+}
+.section3div1{
+    max-width: 400px;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-top: 150px;
+    h5{
+        font-size: 15px;
+        color:$section3div1;
+    }
+    h2{
+        font-size: 36px;
+        margin-top: 7px;
+    }
+    .line{
+        height:2px;
+        width: 200px;
+        background-color:$button;
+        margin-top: 5px;
+    }
+    h3{
+        font-size: 19px;
+        color:$section3div1;
+        margin-top: 20px;
+    }
+    h4{
+        font-size: 19px;
+        color:$section3div1h4;
+        margin-top: 18px;
+    }
+    h6{
+        margin-top: 20px;
+        width: 100px;
+        height: 30px;
+        background-color:$button;
+        @include location (center,center);
+        border-radius: 10%;
+        font-size:18px;
+        color:$color1;
+        margin-left: 130px;
+            :hover{
+                color:$hovercolor;
+                transition:2s;
+            }
+    }
+}
+.g1{
+    width:200px;
+    height: 300px;
+    margin-left: 100px;
+}
+.g2{
+    width: 200px;
+    height: 270px;
+    margin-left: 50px;
+    margin-top: 30px;
+
+}
+.g3{
+    width: 200px;
+    height: 270px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.section3dd1{
+    margin-top: 150PX;
+}
+.section3dd2{
+    margin-left: 50px;
+}
+.rsp{
+    display: none;
+}
+                  //    ============section3 end========
+                  //    ============sectio4 start========
+.section4{
+    margin-top: 50px;
+    background-color:$section4;
+    height:300px;
+    padding: 30px;
+}
+.section4div1{
+    h2{
+     font-size: 40px;
+     @include flex-proops (center,center);
+     color:$section1colors;
+     margin-top: 50px;
+    }
+   
+    p{
+        font-size: 15px;
+        @include flex-proops (center,center);
+        color:$section1colors;
+    }
+}
+.line2{
+    max-width: 300px;
+    width: 100%;
+    height: 2px;
+    background-color:$button;
+    margin: 0 auto;
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+                  //    ============sectio4 end========
+                  //    ============sectio5 start========
+
+.section5divs{
+    flex-wrap: wrap;
+    @include flex-proops (center,center)  
+}
+.d1{
+    background-image:url(../imiges/d1.png);
+    background-position:top;
+    @include section4;
+    @include flex-proops (center,flex-end);
+    p{
+        color:$section1colors;
+        font-size: 30px; 
+        background-color:$color1;opacity: 0.6;
+        width: 100%;          
+    }
+}
+.d2{
+    background-image: url(../imiges/d6.png);
+    @include section4;
+    @include flex-proops (center,center);  
+}
+.d2ins{
+    h2{
+        color: $section1colors;
+        font-size: 30px;
+    }
+    .line4{
+        margin-top: 10px;
+        height: 2px;
+        width: 300px;
+        background-color: $section1colors;
+        margin-bottom: 10px;
+    }
+    p{
+        color:  $section1colors;   
+    }
+    h5{
+        margin-top: 20px;
+        width: 110px;
+        height: 40px;
+        background-color:$section1colors;
+        @include location (center,center);
+        border-radius: 50%;
+        font-size:18px;
+        color:$color1;
+    }     
+}
+.d3{
+    background-image:url(../imiges/d2.png);
+    background-position:top;
+    @include section4;
+    @include flex-proops (center,flex-end);
+    p{
+        color:$section1colors;
+        font-size: 30px; 
+        background-color:$color1;opacity: 0.6;
+        width: 100%;          
+    }
+}
+.d4{
+    background-image:url(../imiges/d5.png);
+    background-position:top;
+    @include section4;
+    @include flex-proops (center,flex-end);
+    p{
+        color:$section1colors;
+        font-size: 30px; 
+        background-color:$color1;opacity: 0.6;
+        width: 100%;          
+    }
+}
+.d5{
+    background-image:url(../imiges/d4.png);
+    @include section4;
+    @include flex-proops (center,flex-end);
+    background-position:bottom left;
+    p{
+        color:$section1colors;
+        font-size: 30px; 
+        background-color:$color1;opacity: 0.6;
+        width: 100%;          
+    }
+}
+.d6{
+    background-image:url(../imiges/d3.png);
+    @include section4;
+    @include flex-proops (center,flex-end);
+    p{
+        color:$section1colors;
+        font-size: 30px; 
+        background-color:$color1;opacity: 0.6;
+        width: 100%;          
+    }
+}
+                  //    ============sectio5 end========
+                  //    ============sectio6 start========
+.section6div1{
+    margin-top:100px;
+    @include location (center,center);
+    h3{
+        font-size: 30px;
+    }
+    p{
+    font-family:$roboto; 
+    }
+
+}
+.linee{
+    max-width: 150px;
+    width: 100%;
+    height: 2px;
+    background-color:$button;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.section6div2{
+    @include flex-proops(space-around,center);
+    flex-wrap: wrap;
+
+}
+.divv1{
+    margin-top: 65px;
+    max-width: 200px;
+    width: 100%;
+    border: solid 2px $button;
+    margin-bottom: 100px;
+    h2{
+        @include flex-proops(center,center);
+        font-size: 20px;
+        margin-top: 7px;
+    }
+    h4{
+        @include flex-proops(center,center);
+        font-size: 15px;
+        margin-top: 5px;
+    }  
+}
+.divimg{
+    @include section6;
+}
+.icons{
+    @include flex-proops(center,center);
+    margin-top: 7px;
+}
+.icon{
+    margin-left:7px;
+    margin-right: 7px;
+    margin-bottom: 5px;
+}
+
+
+
+.divv2{
+    margin-top: 65px;
+    max-width: 200px;
+    width: 100%;
+    border: solid 2px $button;
+    margin-bottom: 100px;
+
+    h2{
+        @include flex-proops(center,center);
+        font-size: 20px;
+        margin-top: 7px;
+    }
+    h4{
+        @include flex-proops(center,center);
+        font-size: 15px;
+        margin-top: 5px;
+    }  
+}
+.divimg{
+    @include section6;
+}
+.icons{
+    @include flex-proops(center,center);
+    margin-top: 7px;
+}
+.icon{
+    margin-left:7px;
+    margin-right: 7px;
+    margin-bottom: 5px;
+}
+.divv3{
+    margin-top: 65px;
+    max-width: 200px;
+    width: 100%;
+    border: solid 2px $button;
+    margin-bottom: 100px;
+    h2{
+        @include flex-proops(center,center);
+        font-size: 20px;
+        margin-top: 7px;
+    }
+    h4{
+        @include flex-proops(center,center);
+        font-size: 15px;
+        margin-top: 5px;
+    }  
+}
+.divimg{
+    @include section6;
+}
+.icons{
+    @include flex-proops(center,center);
+    margin-top: 7px;
+}
+.icon{
+    margin-left:7px;
+    margin-right: 7px;
+    margin-bottom: 5px;
+}
+                  //    ============sectio6 end========
+                  //    ============contact start========
+.section7div1{
+    h2{
+        color: white;
+        font-size: 25px;
+    }
+}
+.line8{
+    max-width: 120px;
+    width: 100%;
+    height: 2px;
+    background-color:$button;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.section7{
+    background-color:$section4;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    max-width: 400px;
+    width: 100%;
+    label{
+        font-size: 18px;
+        color: $button;
+        margin-bottom: 10px;
+    }
+    input{
+        padding: 15px;
+        border: none;
+        border:2px solid $button;
+        border-radius: 8px;
+        outline: none;
+        caret-color: $button;
+        background-color: $section4;
+    }
+    input::placeholder{
+        color:white;
+    }
+    .buttonsdiv{
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+.click{
+    width:90px;
+    height:30px;
+    border: 2px solid $button;
+    border-radius: 8px;
+    color: $section1colors;
+    background-color:$color1;
+  
+}
+button:hover{
+    border:2px solid $color1;
+    background-color: $button;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    border: 2px solid $button;
+    border-radius: 8px;
+    padding: 10px;
+    outline: none;
+    background-color: $section4;
+    resize: none;
+}
+.lastimg{
+    max-width: 450px;
+    width: 100%;
+    margin-top: 15px;
+}
+                  //    ============contact end========
+                //    ============footer start======
+footer{
+    flex-wrap: wrap;
+    background-color: $color1;
+    @include flex-proops(space-around,center);
+    padding: 20px;
+    h3{
+        font-size: 20px;
+        color: $section1colors;
+        margin-top: 70px;
+        margin-bottom: 10px;
+    }
+    p{
+        font-size: 20px;
+        color: $section1colors;
+    }
+}
+.footercontact{
+    display: flex;
+    flex-direction: column;
+}
+a{
+    color: $button;
+    margin-top: 7px;
+    margin-left: 3px;
+}
+.cont{
+    margin-top: 10px;
+}
+.logos{
+    margin-top: 10px;
+    justify-content: space-around;
+    display: flex;
+    margin-right: 85px;
+}
+iframe{
+    max-width: 450px;
+    width: 100%;
+    height: 270px;
+}
+                //    ============footer end======
+
+
